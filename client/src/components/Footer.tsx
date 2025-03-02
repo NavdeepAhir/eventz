@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="bg-secondary p-4">
+    <div className="bg-secondary-dark p-4">
       <h3 className="text-primary-dark text-center">Made By Navdeep Vala</h3>
     </div>
   );

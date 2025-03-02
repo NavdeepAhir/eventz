@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -26,6 +27,15 @@ module.exports = {
         },
         neutral: {
           DEFAULT: "#FEFAE0",
+        },
+      },
+      animation: {
+        wave: "waveMove 5s linear infinite",
+      },
+      keyframes: {
+        waveMove: {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(150%)" },
         },
       },
     },
