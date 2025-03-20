@@ -1,58 +1,44 @@
-import {
-  faCalendarCheck,
-  faClock,
-  faNoteSticky,
-} from "@fortawesome/free-regular-svg-icons";
-import { faListCheck } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 const HeroSection = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center h-[80vh] px-6">
-      {/* Dot Grid Background */}
-      <div
-        className="absolute inset-0 -z-10
-		bg-[radial-gradient(#e5e7eb_2px,transparent_1px)] [background-size:16px_16px] 
-		[mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]
-		"
-      ></div>
-      {/* Brightness Wave Animation Overlay */}
-      {/*<div
-        className="absolute w-full h-1/2 
-		bg-[radial-gradient(#000000_2px,transparent_1px)] [background-size:16px_16px] 
-		[mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]
-          animate-wave"
-      ></div>*/}
-      {/* Floating Icons */}
-      <FontAwesomeIcon
-        icon={faCalendarCheck}
-        className="absolute text-blue-600 text-2xl top-28 left-[350px] -rotate-12"
-      />
-      <FontAwesomeIcon
-        icon={faClock}
-        className="absolute text-blue-600 text-2xl top-28 right-[350px] rotate-12"
-      />
-      <FontAwesomeIcon
-        icon={faListCheck}
-        className="absolute text-blue-600 text-2xl bottom-36 left-[420px] -rotate-12"
-      />
-      <FontAwesomeIcon
-        icon={faNoteSticky}
-        className="absolute text-blue-600 text-2xl bottom-36 right-[420px] rotate-12"
-      />
-      <div>
-        <h1 className="text-5xl font-extrabold max-w-3xl">
-          Procrastinators, Meet Your Worst Nightmare!
+    <div>
+      <section className="dark:bg-black dark:text-white relative flex flex-col items-center justify-center text-center h-[80vh] px-6">
+        <div>
+          <div className="absolute "></div>
+          <h1 className="text-7xl max-w-4xl">
+            <span className="font-extrabold relative z-10">
+              Organize
+              <span className="absolute inset-x-0 bottom-0 -z-10 h-10 bg-primary-pink rounded-xl"></span>
+            </span>{" "}
+            everything <br />
+            in your{" "}
+            <span className="text-secondary-blue font-extrabold">life</span>
+          </h1>
+          <button className="mt-6 bg-black text-white px-16 py-3 rounded-full shadow-lg hover:bg-gray-700  transition">
+            Get Started
+          </button>
+        </div>
+      </section>
+      <div className="bg-white px-32 py-20">
+        <span className="bg-secondary-blue px-6 py-1 rounded-full ">
+          Our Service
+        </span>
+        <h1 className="text-3xl font-bold mt-8">
+          Streamlining Your Daily Tasks <br /> with Smart Productivity Tracking
         </h1>
-        <h2 className="mt-4 text-xl max-w-2xl opacity-90">
-          A to-do app so good, you might actually get things done. (Scary,
-          right?)
-        </h2>
-        <button className="mt-6 bg-white text-blue-600 px-6 py-3 rounded-full font-semibold text-lg shadow-lg hover:bg-gray-200 transition">
-          Get Started
-        </button>
+        <div className="flex w-full bg-neutral justify-center items-center">
+          <div>
+            <h3>In Progress</h3>
+          </div>
+          <div>
+            <h1>Task & Project Management</h1>
+            <p>
+              Manage all your tasks and projects in one place. It's easy to
+              create, organize, and complete tasks with an intutive interface.
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 

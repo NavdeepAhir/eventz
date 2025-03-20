@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        poppins: ['"Poppins"', "sans-serif"],
         fira: ['"Fira Code"', "monospace"],
         meow: ['"Meow Script"', "cursive"],
         geist_mono: ['"Geist Mono"', "monospace"],
@@ -12,21 +13,17 @@ module.exports = {
       },
       colors: {
         primary: {
-          // DEFAULT: "#606C38", // Dark Olive Green
-          // dark: "#283618", // Dark Green
           DEFAULT: "#000000",
-          light: "#333333",
-          dark: "#111111",
+          pink: "#FFC0CB",
+          yellow: "#FFD700",
         },
         secondary: {
-          // DEFAULT: "#DDA15E", // Golden Brown
-          // dark: "#BC6C25", // Rust Orange
           DEFAULT: "#ffffff",
-          light: "#f5f5f5",
-          dark: "#e0e0e0",
+          blue: "#8BAEDF",
         },
         neutral: {
-          DEFAULT: "#FEFAE0",
+          DEFAULT: "#F6F6F6",
+          text: "#111827",
         },
       },
       animation: {
